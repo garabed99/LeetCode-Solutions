@@ -30,7 +30,7 @@ The second distinct maximum is 2 (both 2's are counted together since they have 
 The third distinct maximum is 1.
  
 
-Constraints:
+##Constraints:
 
 1 <= nums.length <= 10^4
 -2^31 <= nums[i] <= 2^31 - 1
