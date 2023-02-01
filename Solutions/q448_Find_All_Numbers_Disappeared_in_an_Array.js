@@ -1,4 +1,4 @@
-/*
+/* [EASY]
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
  
 
@@ -13,7 +13,7 @@ Input: nums = [1,1]
 Output: [2]
  
 
-Constraints:
+##Constraints:
 
 n == nums.length
 1 <= n <= 10^5
