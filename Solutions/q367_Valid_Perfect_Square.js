@@ -17,12 +17,12 @@ Output: false
 Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.
  
 
-Constraints:
+##Constraints:
 
 1 <= num <= 2^31 - 1
 */
 
-let isPerfectSquare = function (num) {
+function isPerfectSquare(num) {
   let result = false;
   let n = 2;
 

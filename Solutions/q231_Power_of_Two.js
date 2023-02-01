@@ -27,7 +27,7 @@ Output: false
 Follow up: Could you solve it without loops/recursion?
 */
 
-let isPowerOfTwo = function (n) {
+function isPowerOfTwo(n) {
   if (n === 0) return false;
 
   while (n !== 1) {

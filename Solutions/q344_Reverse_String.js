@@ -14,13 +14,13 @@ Input: s = ["H","a","n","n","a","h"]
 Output: ["h","a","n","n","a","H"]
  
 
-Constraints:
+##Constraints:
 
 1 <= s.length <= 10^5
 s[i] is a printable ascii character.
 */
 
-let reverseString = function (s) {
+function reverseString(s) {
   let temp = "";
   for (let i = 0; i < Math.floor(s.length / 2); i++) {
     temp = s[i];

@@ -16,7 +16,7 @@ Input: num = 0
 Output: 0
  
 
-Constraints:
+##Constraints:
 
 0 <= num <= 2^31 - 1
  
@@ -24,7 +24,7 @@ Constraints:
 Follow up: Could you do it without any loop/recursion in O(1) runtime?
 */
 
-let addDigits = function (num) {
+function addDigits(num) {
   if (num < 10 && num >= 0) return num;
   let sum = 0;
 

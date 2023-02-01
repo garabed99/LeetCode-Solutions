@@ -31,10 +31,10 @@ The number of nodes in the tree is in the range [1, 3 * 10^4].
  * }
  */
 
-let maxPathSum = function (root) {
+function maxPathSum(root) {
   let max = -Infinity;
 
-  getSum = (node) => {
+  function getSum(node) {
     if (node === null) return 0;
 
     let leftSide = getSum(node.left);

@@ -28,7 +28,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 s consists only of printable ASCII characters.
 */
 
-let isPalindrome = function (s) {
+function isPalindrome(s) {
   if (s === " ") return true;
   let cleanString = s
     .replace(/[!?@#$%%^`~&*();:"\{}\\/[\[\]',._-\s+\\]/g, "")

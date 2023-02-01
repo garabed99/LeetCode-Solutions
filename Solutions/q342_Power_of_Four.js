@@ -19,7 +19,7 @@ Input: n = 1
 Output: true
  
 
-Constraints:
+##Constraints:
 
 -2^31 <= n <= 2^31 - 1
  
@@ -27,7 +27,7 @@ Constraints:
 Follow up: Could you solve it without loops/recursion?
 */
 
-let isPowerOfFour = function (n) {
+function isPowerOfFour(n) {
   if (n <= 0) return false;
 
   while (n !== 1) {

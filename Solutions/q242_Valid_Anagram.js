@@ -13,7 +13,7 @@ Input: s = "rat", t = "car"
 Output: false
  
 
-Constraints:
+##Constraints:
 
 1 <= s.length, t.length <= 5 * 10^4
 s and t consist of lowercase English letters.
@@ -22,7 +22,7 @@ s and t consist of lowercase English letters.
 Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 */
 
-let isAnagram = function (s, t) {
+function isAnagram(s, t) {
   if (s.length !== t.length) return false;
   let sortedS = s.split("").sort().join("");
   let sortedT = t.split("").sort().join("");

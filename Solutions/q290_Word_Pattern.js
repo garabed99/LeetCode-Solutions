@@ -19,7 +19,7 @@ Input: pattern = "aaaa", s = "dog cat cat dog"
 Output: false
  
 
-Constraints:
+##Constraints:
 
 1 <= pattern.length <= 300
 pattern contains only lower-case English letters.
@@ -29,7 +29,7 @@ s does not contain any leading or trailing spaces.
 All the words in s are separated by a single space.
 */
 
-let wordPattern = function (pattern, s) {
+function wordPattern(pattern, s) {
   const sArr = s.split(" ");
   const patternUnique = new Set(pattern);
   const sUnique = new Set(sArr);

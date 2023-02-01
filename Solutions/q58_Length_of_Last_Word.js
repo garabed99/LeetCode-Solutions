@@ -21,14 +21,14 @@ Output: 6
 Explanation: The last word is "joyboy" with length 6.
  
 
-Constraints:
+##Constraints:
 
 1 <= s.length <= 10^4
 s consists of only English letters and spaces ' '.
 There will be at least one word in s.
 */
 
-let lengthOfLastWord = function (s) {
+function lengthOfLastWord(s) {
   let trimmedS = s.trim();
   let arrayOfS = trimmedS.trim().split(" ");
   return arrayOfS[arrayOfS.length - 1].length;

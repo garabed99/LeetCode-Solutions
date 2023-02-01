@@ -19,13 +19,13 @@ Input: ransomNote = "aa", magazine = "aab"
 Output: true
  
 
-Constraints:
+##Constraints:
 
 1 <= ransomNote.length, magazine.length <= 10^5
 ransomNote and magazine consist of lowercase English letters.
 */
 
-let canConstruct = function (ransomNote, magazine) {
+function canConstruct(ransomNote, magazine) {
   if (ransomNote.length > magazine.length) return false;
   if (ransomNote.length !== null && magazine.length === 0) return false;
 
@@ -36,4 +36,4 @@ let canConstruct = function (ransomNote, magazine) {
   }
 
   return true;
-};
+}

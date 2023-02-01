@@ -23,7 +23,7 @@ Output: 21
 -2^31 <= x <= 2^31 - 1
 */
 
-let reverse = function (x) {
+function reverse(x) {
   let stringNum = x + "";
 
   if (stringNum[0] === "-") {

@@ -23,7 +23,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 0 <= prices[i] <= 10^4
 */
 
-let maxProfit = function (prices) {
+function maxProfit(prices) {
   let profit = 0;
   let current = prices[0];
   let maxProfit = [];

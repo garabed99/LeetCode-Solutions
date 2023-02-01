@@ -17,13 +17,13 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 Total amount you can rob = 2 + 9 + 1 = 12.
  
 
-Constraints:
+##Constraints:
 
 1 <= nums.length <= 100
 0 <= nums[i] <= 400
 */
 
-let rob = function (nums) {
+function rob(nums) {
   let prev = 0;
   let curr = 0;
 
@@ -38,4 +38,4 @@ let rob = function (nums) {
     }
   }
   return curr;
-};
+}

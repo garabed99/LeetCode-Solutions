@@ -14,13 +14,13 @@ Input: s = "leetcode"
 Output: "leotcede"
  
 
-Constraints:
+##Constraints:
 
 1 <= s.length <= 3 * 10^5
 s consist of printable ASCII characters.
 */
 
-let reverseVowels = function (s) {
+function reverseVowels(s) {
   let vowelsInStr = [];
   let regEx = /[aeiou]/gi;
   let result = [];

@@ -37,14 +37,14 @@ Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
  
 
-Constraints:
+##Constraints:
 
 0 <= nums.length <= 100
 0 <= nums[i] <= 50
 0 <= val <= 100
 */
 
-let removeElement = function (nums, val) {
+function removeElement(nums, val) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] == val) {
       nums.splice(i, 1);

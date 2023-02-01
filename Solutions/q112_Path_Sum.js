@@ -40,7 +40,7 @@ The number of nodes in the tree is in the range [0, 5000].
  * }
  */
 
-let hasPathSum = function (root, targetSum) {
+function hasPathSum(root, targetSum) {
   if (root === null) return false;
 
   if (!root.left && !root.right) {

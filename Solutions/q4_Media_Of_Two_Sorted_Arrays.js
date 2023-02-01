@@ -25,11 +25,11 @@ nums2.length == n
 -10^6 <= nums1[i], nums2[i] <= 10^6
 */
 
-let findMedianSortedArrays = function (nums1, nums2) {
+function findMedianSortedArrays(nums1, nums2) {
   let mergedArrays = [...nums1, ...nums2].sort((a, b) => a - b);
   let n = mergedArrays.length;
 
   if (n % 2 === 0) {
     return (mergedArrays[n / 2 - 1] + mergedArrays[n / 2]) / 2;
   } else return mergedArrays[Math.floor(n / 2)];
-};
+}

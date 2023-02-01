@@ -20,12 +20,12 @@ Explanation: There are three ways to climb to the top.
 3. 2 steps + 1 step
  
 
-Constraints:
+##Constraints:
 
 1 <= n <= 45
 */
 
-let climbStairs = function (n) {
+function climbStairs(n) {
   if (n < 3) return n;
   let first = 1;
   let second = 2;

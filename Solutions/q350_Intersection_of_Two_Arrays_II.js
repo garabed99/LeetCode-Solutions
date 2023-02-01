@@ -14,7 +14,7 @@ Output: [4,9]
 Explanation: [9,4] is also accepted.
  
 
-Constraints:
+##Constraints:
 
 1 <= nums1.length, nums2.length <= 1000
 0 <= nums1[i], nums2[i] <= 1000
@@ -27,7 +27,7 @@ What if nums1's size is small compared to nums2's size? Which algorithm is bette
 What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 */
 
-let intersect = function (nums1, nums2) {
+function intersect(nums1, nums2) {
   nums1.sort((a, b) => a - b);
   nums2.sort((a, b) => a - b);
   let result = [];

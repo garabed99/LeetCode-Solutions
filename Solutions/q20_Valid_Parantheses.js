@@ -22,13 +22,13 @@ Input: s = "(]"
 Output: false
  
 
-Constraints:
+##Constraints:
 
 1 <= s.length <= 10^4
 s consists of parentheses only '()[]{}'.
 */
 
-let isValid = function (s) {
+function isValid(s) {
   if (s.length === 0) return true;
   if (s.length % 2 !== 0) return false;
   let stack = [];

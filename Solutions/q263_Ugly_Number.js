@@ -21,12 +21,12 @@ Output: false
 Explanation: 14 is not ugly since it includes the prime factor 7.
  
 
-Constraints:
+##Constraints:
 
 -2^31 <= n <= 2^31 - 1
 */
 
-let isUgly = function (n) {
+function isUgly(n) {
   if (n <= 0) return false;
   if (n === 1) return true;
 

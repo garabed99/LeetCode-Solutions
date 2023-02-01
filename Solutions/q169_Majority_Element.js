@@ -22,7 +22,7 @@ n == nums.length
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 */
 
-let majorityElement = function (nums) {
+function majorityElement(nums) {
   let maxCounter = 0;
   let majorityElement = nums[0];
 

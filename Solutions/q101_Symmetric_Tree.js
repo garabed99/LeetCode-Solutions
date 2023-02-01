@@ -29,7 +29,7 @@ Follow up: Could you solve it both recursively and iteratively?
  * }
  */
 
-let isSymmetric = function (root) {
+function isSymmetric(root) {
   if (root === null) return true;
 
   helper = (leftNode, rightNode) => {

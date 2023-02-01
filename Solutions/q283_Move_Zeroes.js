@@ -14,7 +14,7 @@ Input: nums = [0]
 Output: [0]
  
 
-Constraints:
+##Constraints:
 
 1 <= nums.length <= 1^04
 -2^31 <= nums[i] <= 2^31 - 1
@@ -23,7 +23,7 @@ Constraints:
 Follow up: Could you minimize the total number of operations done?
 */
 
-let moveZeroes = function (nums) {
+function moveZeroes(nums) {
   let pointer = 0;
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== 0) {
@@ -37,4 +37,4 @@ let moveZeroes = function (nums) {
   }
 
   return nums;
-};
+}

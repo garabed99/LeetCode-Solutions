@@ -14,13 +14,13 @@ Output: [9,4]
 Explanation: [4,9] is also accepted.
  
 
-Constraints:
+##Constraints:
 
 1 <= nums1.length, nums2.length <= 1000
 0 <= nums1[i], nums2[i] <= 1000
 */
 
-let intersection = function (nums1, nums2) {
+function intersection(nums1, nums2) {
   let uniqueNums1 = [...new Set(nums1)];
   let uniqueNums2 = [...new Set(nums2)];
   let result = [];

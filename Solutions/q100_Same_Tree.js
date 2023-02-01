@@ -32,7 +32,8 @@ The number of nodes in both trees is in the range [0, 100].
  *     this.right = (right===undefined ? null : right)
  * }
  */
-let isSameTree = function (p, q) {
+
+function isSameTree(p, q) {
   if (p === null && q === null) return true;
   if (
     (p !== null && q === null) ||
@@ -42,4 +43,4 @@ let isSameTree = function (p, q) {
     return false;
 
   return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-};
+}
