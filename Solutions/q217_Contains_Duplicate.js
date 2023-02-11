@@ -25,6 +25,21 @@ Output: true
 */
 
 function containsDuplicate(nums) {
-  let unique = [...new Set(nums)];
-  return nums.length === unique.length ? false : true;
+  // let unique = [...new Set(nums)];
+  // return nums.length === unique.length ? false : true;
+
+  let map = {};
+  let contains = false;
+
+  for (let num of nums) {
+    if (!map[num]) {
+      map[num] = 1;
+    } else map[num]++;
+  }
+
+  for (let count in map) {
+    if (map[count] > 1) contains = true;
+  }
+
+  return contains;
 }
